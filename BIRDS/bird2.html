@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-top: 50px;
+        }
+
+        .bird-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="birds.html">Birds</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    </header>
+    <div class="container">
+        <img class="bird-img" src="birds/img2.jpg" alt="Bird Image" height="100" width="100">
+        <h1>Bird Description</h1>
+        <p>
+            A creature of the salt-sprayed cliffs, where crashing waves meet rugged stone, its wings are a symphony of whites and grays, blending seamlessly with the misty horizon.
+            <br> With swift, precise dives, it plucks silver flashes from the swirling depths below, its talons a testament to its prowess as a hunter of the sea. At twilight, it returns to its cliffside perch, silhouetted against the fiery hues of the setting sun, a sentinel of the coastal realm.
+        </p>
+    </div>
+</body>
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="socialicons/icon1.webp"></a>
+        <a href="https://www.instagram.com"><img src="socialicons/icon2.png"></a>
+        <a href="https://x.com/?lang=en"><img src="socialicons/icon3.jpeg"></a>
+    </div>
+    <div class="copyright">
+        &copy; 2024 Your Company Name. All rights reserved.
+    </div>
+</footer>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>

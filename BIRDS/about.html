@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mission,
+        .vision,
+        .values {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    </style>
+</head>
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="birds.html">Birds</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</header>
+
+<body>
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>At Birds Website, our mission is to foster a deeper understanding and appreciation for avian life. We aim to
+            provide comprehensive resources, engaging content, and educational materials that inspire conservation
+            efforts and promote bird welfare worldwide.</p>
+    </section>
+
+    <section class="vision">
+        <h2>Our Vision</h2>
+        <p>We envision a world where birds thrive in their natural habitats, supported by informed and passionate
+            communities dedicated to their conservation and well-being. Through advocacy, research, and education, we
+            strive to contribute to a sustainable future for avian species.</p>
+    </section>
+
+    <section class="values">
+        <h2>Our Values</h2>
+        <ul>
+            <li>Passion for Birds: We are driven by a profound love and respect for birds and their environments.</li>
+            <li>Educational Excellence: We are committed to providing accurate, engaging, and accessible information
+                about avian biology, behavior, and conservation.</li>
+            <li>Conservation Advocacy: We advocate for policies and practices that protect birds and their habitats,
+                working collaboratively with conservation organizations and communities.</li>
+            <li>Community Engagement: We foster a community of bird enthusiasts, researchers, educators, and
+                conservationists who share our dedication to avian welfare.</li>
+        </ul>
+    </section>
+
+</body>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="socialicons/icon1.webp"></a>
+        <a href="https://www.instagram.com"><img src="socialicons/icon2.png"></a>
+        <a href="https://x.com/?lang=en"><img src="socialicons/icon3.jpeg"></a>
+    </div>
+    <div class="copyright">
+        &copy; 2024 Your Company Name. All rights reserved.
+    </div>
+</footer>
+<Script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</Script>
+
+</html>

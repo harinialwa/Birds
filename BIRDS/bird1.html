@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-top: 50px;
+        }
+
+        .bird-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="birds.html">Birds</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    </header>
+    <div class="container">
+        <img class="bird-img" src="birds/img1.jpg" alt="Bird Image" height="100" width="100">
+        <h1>Bird Description</h1>
+        <p>
+            In the tranquil dawn, a feathered silhouette emerges, its wings a canvas of earth tones and speckled patterns. With a graceful hop, it forages amidst dew-kissed grass, its keen eyes scanning for insects hidden in the morning haze. 
+            <br>Its call, a gentle melody of chirps and trills, harmonizes with the awakening symphony of the forest. As the sun climbs, it retreats into the canopy, leaving only a fleeting memory of its presence in the cool, whispering breeze.
+            </p>
+    </div>
+</body>
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="socialicons/icon1.webp"></a>
+        <a href="https://www.instagram.com"><img src="socialicons/icon2.png"></a>
+        <a href="https://x.com/?lang=en"><img src="socialicons/icon3.jpeg"></a>
+    </div>
+    <div class="copyright">
+        &copy; 2024 Your Company Name. All rights reserved.
+    </div>
+</footer>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>

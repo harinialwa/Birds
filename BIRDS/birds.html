@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="birds.html">Birds</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </header>
+    <main>
+        <div class="image-grid">
+            <div class="row">
+                <div class="card">
+                    <a href="bird1.html"><img src="birds/img1.jpg" alt="Image 1" height="100" width="100"></a>
+                </div>
+                <div class="card">
+                    <a href="bird2.html"><img src="birds/img2.jpg" alt="Image 2" height="100" width="100"><a>
+                </div>
+                <div class="card">
+                    <a href="bird3.html"><img src="birds/img3.jpg" alt="Image 3" height="100" width="100"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <a href="bird4.html"><img src="birds/img4.avif" alt="Image 4" height="100" width="100"></a>
+                </div>
+                <div class="card">
+                    <a href="bird5.html"><img src="birds/img5.avif" alt="Image 5" height="100" width="100"></a>
+                </div>
+                <div class="card">
+                    <a href="bird6.html"><img src="birds/img6.avif" alt="Image 6" height="100" width="100"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <a href="bird7.html"><img src="birds/img7.avif" alt="Image 7" height="100" width="100"></a>
+                </div>
+                <div class="card">
+                    <a href="bird8.html"><img src="birds/img8.jpg" alt="Image 8" height="100" width="100"></a>
+                </div>
+                <div class="card">
+                    <a href="bird9.html"><img src="birds/img9.avif" alt="Image 9" height="100" width="100"></a>
+                </div>
+            </div>
+    </main>
+</body>
+
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="socialicons/icon1.webp"></a>
+        <a href="https://www.instagram.com"><img src="socialicons/icon2.png"></a>
+        <a href="https://x.com/?lang=en"><img src="socialicons/icon3.jpeg"></a>
+    </div>
+    <div class="copyright">
+        &copy; 2024 Your Company Name. All rights reserved.
+    </div>
+</footer>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    var cards = document.querySelectorAll('.card');
+
+    cards.forEach(function (card) {
+        var img = card.querySelector('img');
+        var searchIcon = card.querySelector('.search-icon');
+
+        card.addEventListener('mouseenter', function () {
+            searchIcon.style.display = 'block';
+        });
+
+        card.addEventListener('mouseleave', function () {
+            searchIcon.style.display = 'none';
+        });
+
+        searchIcon.addEventListener('click', function (event) {
+            event.stopPropagation();
+            var link = searchIcon.getAttribute('data-link');
+            if (link) {
+                window.location.href = link;
+            }
+        });
+    });
+</script>
+
+</html>
